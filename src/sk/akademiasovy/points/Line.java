@@ -19,7 +19,7 @@ public class Line {
     }
 
     public Point getMidOfLine(){
-        return new Point(a.getX()+b.getX());
+        return new Point((a.getX() + b.getX())/2,((a.getY() + b.getY())/2));
     }
 
     public boolean isParalelToAxisOfX(){
