@@ -1,6 +1,10 @@
 package sk.akademiasovy.points;
 
+import sk.akademiasovy.Abstract.Person;
+import sk.akademiasovy.Abstract.Student;
+import sk.akademiasovy.Abstract.Teacher;
 import sk.akademiasovy.date.MyDate;
+import sk.akademiasovy.other.MyClass;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,6 +41,7 @@ public class Main {
             ((Point3d)temp).printInfo();
         }
 
+
         Point bod15 = new Point(2,5);
         Line line1 = new Line(bod15, new Point(10,4));
         Line line2 = new Line(1,2,4,6);
@@ -47,6 +52,17 @@ public class Main {
 
         MyDate date1 = new MyDate();
         date1.today2();
+
+        MyClass name = new MyClass();
+        System.out.println(name.formatName("ondrej"));
+
+        MyClass myclass = new MyClass();
+        System.out.println(myclass.isEmailValid("ondrej..@gmail.com"));
+
+        Person p = new Teacher();
+        ((Teacher)p).setSalary(2200);
+
+        Person s = new Student();
 
 
 
